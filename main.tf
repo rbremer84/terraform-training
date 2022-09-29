@@ -1,16 +1,16 @@
-## without variables
-resource "azurerm_resource_group" "example" {
-  name     = "tf-training-resources"
-  location = "Central US"
-}
+# # without variables
+# resource "azurerm_resource_group" "example" {
+#   name     = "tf-training-resources"
+#   location = "Central US"
+# }
 
-## with variables
+# # with variables
 # resource "azurerm_resource_group" "example" {
 #   name     = "${var.prefix}-resources"
 #   location = var.location
 # }
 
-## demo virtual network
+# # demo virtual network
 # resource "azurerm_virtual_network" "example" {
 #   name                = "${var.prefix}-network"
 #   resource_group_name = azurerm_resource_group.example.name
